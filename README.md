@@ -30,7 +30,7 @@ MODULES :
    10. SHARE PRIME BENEFITS
    11. DONATION TO CHARITY
    12. DISCOUNT BY SUBSCRIBING
-   13. HELP AND CUSTOMER SEVICES
+   13. HELP AND CUSTOMER SERVICES
 
 
 MODULE IMAGES :
@@ -83,5 +83,5 @@ MODULE IMAGES :
 ![image](https://github.com/priyadharshini7-r/Amazon-clone/assets/142129655/42713eac-4645-488a-b9ed-8b7c1965afa7)
 
 
-13. HELP AND CUSTOMER SEVICES
+13. HELP AND CUSTOMER SERVICES
 ![image](https://github.com/priyadharshini7-r/Amazon-clone/assets/142129655/acaddcae-8e41-4f20-a6d8-b28e70604be5)
