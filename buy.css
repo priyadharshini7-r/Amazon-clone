@@ -1,0 +1,388 @@
+body{
+	background-color:seashell;
+
+
+}
+body::-webkit-scrollbar{
+	display: none;
+}
+#sec1{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: lightgrey;
+	box-shadow:0 10px 30px darkgrey;
+	padding:5px 10px;
+	position: sticky;
+	top: 0;
+	left: 0;
+
+}
+#nav
+{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+#nav li{
+	list-style: none;
+	padding: 0 50px;
+}
+#nav a{
+	text-decoration: none;
+	font-size: 20px;
+	padding: 10px 15px;
+	cursor: pointer;
+	color: black;
+}
+#nav a:hover,
+#nav a.active
+{
+	color: white;
+	box-shadow:0 0 10px red;
+	background: red;
+	border-radius: 5px;
+	transition: 0.3s ease;
+}
+#he{
+	font-size: 20px;
+	font-family: cursive;
+	padding-top: 20px;
+}
+#sec{
+	display: flex;
+	background-color: white;
+	border-radius: 10px;
+	margin: 30px 30px;
+	box-shadow: 0 0 20px lightgrey;
+
+}
+#sec .im{
+	margin: 20px 20px;
+	border: 1px solid white;
+	border-radius: 30px;
+	overflow: hidden;
+}
+#sec .det{
+	align-items: flex-start;
+	padding: 0 50px;
+	font-size: 30px;
+}
+#sec .det h5{
+	word-spacing:5px;
+	font-family: cursive;
+	color: grey;
+	font-size: 20px;
+}
+#sec .det h4{
+	word-spacing: 2px;
+	font-family: cursive;
+
+}
+#sec .det table{
+	border-collapse: collapse;
+	width: 40%;
+	border-radius: 10px;
+	border: 1px solid black;
+}
+#sec .det table td{
+	padding: 5px 15px;
+}
+#sec .am{
+	color: coral;
+	padding-top: 200px;
+	font-size: 20px;
+	padding-left: 300px;
+}
+#sec .am span{
+	padding-left: 10px;
+	color: grey;
+}
+#sec .det table i{
+	color: grey;
+}
+#sec .det table i:hover{
+	color: lightpink;
+}
+#coup{
+	display: flex;
+}
+#coup input{
+	height: 98px;
+	width: 500px;
+	margin-top: 18px;
+	border: none;
+	margin-left: 5px;
+	border-radius: 10px;
+	overflow: hidden;
+	font-size: 30px;
+	text-align: center;
+	font-family: cursive;
+}
+#coup .coupbox{
+	margin-left: 30px;
+	overflow: hidden;
+	background-size: cover;
+	height: 100px;
+	margin-top: 18px;
+	border-radius: 10px;
+		}
+#coup button{
+	overflow: hidden;
+	margin-top: 18px;
+	border-radius: 10px;
+	border: none;
+	width: 100px;
+	height: 100px;
+	background-color:coral;
+	color:white;
+	font-family: cursive;
+	font-size: 20px;
+}
+#coup button:hover{
+	box-shadow: 0 0 10px coral;
+	transform: 1.05;
+}
+#tot{
+	display: flex;
+	width:100%;
+	margin: 18px 30px;
+	justify-content: space-between;
+	border-radius: 10px;
+	height: 120vh;
+}
+#tot .totbox li{
+	list-style: none;
+	padding-bottom: 10px;
+}
+#tot .list li{
+	padding-right: 50px;
+	padding-bottom: 10px;
+	align-items: center;
+}
+#box{
+	padding-right: 35px;
+}
+#tot .main input{
+	padding: 10px 30px;
+	border-radius: 10px;
+	margin-bottom: 5px;
+	border: none;
+	width: 76%;
+	outline: none;
+}
+#tot .main button{
+	width: 13%;
+	padding: 10px 10px;
+	background-color: green;
+	color: white;
+	border: none;
+	border-radius: 10px;
+	margin-left: 10px;
+	cursor: pointer;
+}
+#tot .main button:active{
+transform: scale(1.1);
+}
+#tot .disbox{
+	display: flex;
+	background-color: white;
+	width: 710px;
+	border-radius: 10px;
+	height: 30%;
+}
+#tot .totbox{
+	width: 40%;
+	
+}
+#tot .list{
+	width: 20%;
+	
+	padding-left: 50px;
+	
+}
+#tot .totbox2{
+	width: 40%;
+	
+	text-align: right;
+
+}
+#tot .totbox2 li{
+	list-style: none;
+	padding-bottom: 10px;
+}
+#tot .pay{
+	border: 1px solid black;
+	width: 44%;
+	height: 100%;
+	
+	background-color: white;
+	margin-right: 54px;
+	border-radius: 10px;
+	border: none;
+	padding-left: 10px;
+	padding-bottom: 5px;
+	padding-right: 10px;
+
+}
+#tot .pay h2{
+	font-family: cursive;
+	padding-left: 200px;
+
+}
+#tot .pay hr{
+	width: 100%;
+	margin-right: 10px;
+	color: grey;
+	box-shadow: 0 0 30px lightgrey;
+
+}
+#tot .pay .payment{
+	margin-bottom: 50px;
+
+}
+#upi{
+	margin: 10px 20px;
+	padding: 10px 10px;
+	width: 50%;
+	border-radius: 10px;
+	border:1px solid grey;
+	outline: none;
+
+}
+#tot .pay i{
+	padding-left: 5px;
+	padding-right: 5px;
+}
+#tot .pay .icon{
+	margin-top: 30px;
+	margin-left: 40px;
+	color: blueviolet;
+}
+#tot .pay .go{
+	color: red;
+}
+#tot .pay .am{
+	color: sandybrown;
+}
+#tot .pay .py{
+	color: royalblue;
+}
+#tot .pay .credit{
+	margin-top: 20px;
+}
+#tot .pay .credit .input{
+		margin: 10px 20px;
+	padding: 10px 10px;
+	width: 50%;
+	border-radius: 10px;
+	border:1px solid grey;
+	outline: none;
+}
+#tot .pay .credit select{
+	padding: 10px 20px;
+	border-radius: 10px;
+	border:1px solid grey;
+	width: 26%;
+}
+#tot .pay .credit select option{
+	color: red;
+
+}
+
+#tot .pay .sel{
+	margin-left: 30px;
+	margin-right: 10px;
+}
+#code{
+	padding: 10px 10px;
+	width: 50%;
+	border-radius: 10px;
+	border:1px solid grey;
+	margin-left: 74px;
+	outline: none;
+}
+#zip{
+	
+	padding: 10px 10px;
+	width: 50%;
+	border-radius: 10px;
+	border:1px solid grey;
+	margin-left: 47px;
+	outline: none;
+}
+#tot .pay .btn button{
+	padding: 10px 10px;
+	background:green;
+	border-radius: 8px;
+	color: white;
+	font-family: monospace;
+	border: none;
+	margin-top: 30px;
+	margin-left: 250px;
+	cursor: pointer;
+
+}
+#tot .pay .btn button:active{
+	transform: scale(1.1);
+}
+#tot .pay input[type="radio"]{
+	width: 17px;
+	height: 17px;
+	accent-color: blue;
+	
+}
+#st{
+	text-decoration: line-through;
+	color: lightgrey;
+	text-decoration-color: grey;
+}
+.point{
+	pointer-events: none;
+}
+
+#n1{
+	width: 300px;
+}
+#tot .address{
+	width: 100%;
+	margin: 10px 0px;
+	align-items: center;
+	border-radius: 10px;
+	box-shadow: 0 0 30px lightgrey;
+	background-color: white;
+
+}
+#tot .address input{
+	width: 50%;
+	margin-bottom: 10px;
+	margin-top: 5px;
+	outline: none;
+	border: 1px solid grey;
+	margin-left: 20px;
+}
+#tot .address select{
+	padding: 5px 10px;
+	margin-top: 5px;
+	margin-left: 23px;
+	margin-bottom: 10px;
+	outline: none;
+	border: 1px solid grey;
+	border-radius: 10px;
+
+}
+#tot .address label{
+	padding-left: 10px;
+}
+#tot .address button{
+	margin-left: 200px;
+}
+#tot .address h2{
+	padding-left: 200px;
+}
+#tot .address button:active{
+	transform: scale(1.1);
+}
+#audi{
+	visibility: hidden;
+}

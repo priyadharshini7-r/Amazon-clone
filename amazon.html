@@ -1,0 +1,488 @@
+<html>
+    <head>
+        <title>Amazon clone website</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>    
+        <link rel="stylesheet" href="amazon.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <!--FAV ICON START-->
+        <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+        <link rel="manifest" href="/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <!--FAV ICON END-->
+    </head>
+    <body>
+        <div class="modal" tabindex="-1" id="login">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title text-center">LOGIN</h5>
+                  <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-body-items form-check">
+                    <div>
+                  <input type="text" placeholder="Enter the Email" class="input-textbox mb-3">
+                  </div>
+                  <div>
+                  <input type="password" placeholder="Enter the Password" class="input-textbox">
+                  </div>
+                  <div class="mt-3 input-checkbox">
+                  <input type="checkbox" id="show-pass" class="form-check-input">
+                  <label for="show-pass" class="form-check-label ">Show password</label>
+                  </div>
+                  <div class="m-4 ">
+                    <p>continue with <span class="fa fa-brands fa-google-plus-g text-danger mx-2"></span>Google <span class="fa fa-brands fa-facebook-f text-primary mx-2"></span>Facebook</p>
+                  </div>
+                  <div>
+                    <p>create an account ?<a href=""  data-bs-toggle="modal" data-bs-target="#create-account" class="mx-2">sign up</a></p>
+                  </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-success" data-bs-dismiss="modal"><a href="amazonhome.html" class="text-decoration-none text-light">login</a></button>
+                  <button type="button" class="btn btn-danger "  data-bs-dismiss="modal" aria-label="Close">cancel</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal" tabindex="-1" id="create-account">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title text-center">SIGN UP</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-body-items form-check">
+                    <div>
+                  <input type="text" placeholder="Enter the Email" class="input-textbox mb-4" >
+                  </div>
+                  <div>
+                    <input type="text" placeholder="Enter the Phone number" class="input-textbox mb-4">
+                    </div>
+                  <div>
+                  <input type="password" placeholder="Enter the Password" class="input-textbox mb-4">
+                  </div>
+                  <div>
+                    <input type="text" placeholder="confirm Password" class="input-textbox">
+                    </div>
+
+                  <div class="m-4 ">
+                    <p>signup with <span class="fa fa-brands fa-google-plus-g text-danger mx-2"></span>Google <span class="fa fa-brands fa-facebook-f text-primary mx-2"></span>Facebook</p>
+                  </div>
+                  <div>
+                    <p>Already have an account ?<a href="" data-bs-toggle="modal" data-bs-target="#login" class="mx-2">login</a></p>
+                  </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-success" data-bs-dismiss="modal"><a href="amazonhome.html" class="text-decoration-none text-light">Signup</a></button>
+                  <button type="button" class="btn btn-danger"  data-bs-dismiss="modal" aria-label="Close">cancel</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        <section class="container-fluid m-0 nav-main" >
+            <section class="row">
+                <section class="col-12">
+                    <!--SECTION BOX MAIN-->
+        <section class="nav-main-box d-flex justify-content-between active" >
+            <!--AMAZON LOGO-->
+            <div>
+            <img src="./images/logo.png" alt="" class="logo-img" >
+            </div>
+            <!--LOACTION BOX-->
+            <div class="d-flex justify-content-center align-items-center location">
+
+                <div>
+                <span class="ms-4">Hello</span>
+                <p class="fw-bold"><span class="fa-solid fa-location-dot fs-5 me-2"></span>Select your address</p>
+                </div>
+            </div>
+            <!--SEARCH INPUT BOX-->
+            <div class="d-flex search-box mt-3">
+                <div>
+                <select name="" id="" class="searchbox-select"> 
+                    <option value="">Mobile Accessories</option>
+                    <option value="">All categories</option>
+                    <option value="">Alexa Skills</option>
+                </select>
+                </div>
+                <div >
+                <input type="text" name="" id="" placeholder="Search Amazon.in" class="searchbox-input">
+                </div>
+                <div>
+                    <i class="fa-solid fa-magnifying-glass searchbox-icon "></i>
+                </div>
+            </div>
+            <!--LANGUAGE-->
+            <div class="item-main-language mt-4">
+                <p class="fw-bold text-light">EN</p>
+            </div>
+            <!--ACCOUNT SIGN IN-->
+            <div class="mt-2 d-flex signin-box">
+                <div class="me-3">
+               <span  data-bs-toggle="modal" data-bs-target="#create-account" class="signup">Hello,Sign in</span>
+               <p>
+                <select name="" id="" class="signin-select border-0">
+                    <option value="">Account & Lists</option>
+                </select></p>
+                </div>
+            
+            <div>
+                <span>Returns</span>
+                <p class="fw-bold">& Orders</p>
+                
+            </div>
+            </div>
+            <div class="d-flex mt-3">
+                <p class="fa-solid fa-cart-shopping fs-4"></p>
+                <p class="mt-1">cart</p>
+            </div>
+
+        </section>
+        </section>
+        </section>
+        </section>
+        <!--SECTION 2 MAIN-->
+        <section class="d-flex justify-content-between section2-main">
+            <p class="ms-2"><i class="fa-solid fa-list-ul"></i>All</p>
+            <p>Amazon miniTV</p>
+            <p>Sell</p>
+            <p>Best Sellers</p>
+            <p>Mobiles</p>
+            <p>Today's Deals</p>
+            <p>New Releases</p>
+            <p>Prime</p>
+            <p>Customer Care</p>
+            <p>Electronics</p>
+            <p>Gift Ideas</p>
+            <p>Fashion</p>
+            <div class="me-4">
+                <p>Great Indian Festival | Starts 8th Oct</p>
+            </div>
+        </section>
+        <!--SECTION 3 IMAGE BOX-->
+        <section class="section3-image-box">
+            <img src="./images/background.png" alt="">
+        </section>
+        <!--SECTION 4 BOX CONATAINER-->
+        <section class="container-fluid box-container-background bg-light">
+            <section class="row">
+                <section class="col-12 m-auto">
+        <section class="box-container-main">
+            <!--BOX 1-->
+            
+            <section class="box-container-boxes p-4">
+                <section >
+                    <p class="text-dark fw-bold fs-4">Up to 75% off | Headphones</p>
+                </section>
+                <section class="box-container-background-images">
+                    <section class="conatiner-image ">
+                    <img src="./images/boat.png" alt="">
+                    <p class="offer-text">Up to 75% off | boat</p>
+                    </section>
+                    <section class="conatiner-image ">
+                        <img src="./images/boat.png" alt="">
+                        <p class="offer-text">Up to 75% off | boat</p>
+                        </section>
+                        <section class="conatiner-image ">
+                            <img src="./images/boat.png" alt="">
+                            <p class="offer-text">Up to 75% off | boat</p>
+                            </section>
+                            <section class="conatiner-image ">
+                                <img src="./images/boat.png" alt="">
+                                <p class="offer-text">Up to 75% off | boat</p>
+                                </section>
+   
+                </section>
+                <section>
+                    <p class="text-primary">See all offers</p>
+                </section>
+            </section>
+            <!--BOX 2-->
+            <section class="box-container-boxes p-4">
+                <section >
+                    <p class="text-dark fw-bold fs-4">Shop festival prices, before the sale</p>
+                </section>
+                <section class="box-img">
+                    <img src="./images/box2.png " alt="" >
+                </section>
+                <section>
+                    <p class="text-primary">See all offers</p>
+                </section>
+            </section>
+            <!--BOX 3-->
+            <section class="box-container-boxes p-4">
+                <section >
+                    <p class="text-dark fw-bold fs-4">Cricket Fever Offers</p>
+                </section>
+                <section class="box-container-background-images">
+                    <section class="conatiner-image ">
+                    <img src="./images/box3-tv.jpg" alt="">
+                    <p class="offer-text">Up to 60% off on TVs</p>
+                    </section>
+                    <section class="conatiner-image ">
+                        <img src="./images/box3-shirt.jpg" alt="">
+                        <p class="offer-text">Jerseys Starting <span class="fa-solid fa-indian-rupee-sign text-secondary me-1"></span>999</p>
+                        </section>
+                        <section class="conatiner-image ">
+                            <img src="./images/box3-bat.jpg" alt="">
+                            <p class="offer-text">Up to 60% off cricket bats</p>
+                            </section>
+                            <section class="conatiner-image ">
+                                <img src="./images/box3-phone.jpg" alt="">
+                                <p class="offer-text">Up to 40% off mobile phones</p>
+                                </section>
+   
+                </section>
+                <section>
+                    <p class="text-primary">See all offers</p>
+                </section>
+            </section>
+            <!--BOX 4-->
+            <section class="box-container-boxes p-4">
+                <section >
+                    <p class="text-dark fw-bold fs-4">Blutooth Calling Smartwatch</p>
+                </section>
+               <section class="box-img">
+                <img src="./Imageszip/Smartwatch.png" alt="">
+               </section>
+                <section>
+                    <p class="text-primary">Shop now</p>
+                </section>
+            </section>
+            <!--BOX 5-->
+            <section class="box-container-boxes p-4">
+                <section >
+                    <p class="text-dark fw-bold fs-4">Up to 30% off | Styles for All</p>
+                </section>
+                <section class="box-container-background-images">
+                    <section class="conatiner-image ">
+                    <img src="./Imageszip/Shirt2.png " alt="" style="height:140px;">
+                    <p class="offer-text">clothing</p>
+                    </section>
+                    <section class="conatiner-image" style="height:140px;">
+                        <img src="./Imageszip/shoe.png" alt="">
+                        <p class="offer-text">Footwear</p>
+                        </section>
+                        <section class="conatiner-image" style="height:140px;">
+                            <img src="./Imageszip/Smartwatch.png" alt="">
+                            <p class="offer-text">Smartwatch</p>
+                            </section>
+                            <section class="conatiner-image" style="height:140px;">
+                                <img src="./Imageszip/Bags.png" alt="">
+                                <p class="offer-text">suitcase</p>
+                                </section>
+   
+                </section>
+                <section>
+                    <p class="text-primary">See all offers</p>
+                </section>
+            </section>
+            <!--BOX 6-->
+            <section class="box-container-boxes p-4">
+                <section >
+                    <p class="text-dark fw-bold fs-4">Revamp your home in style</p>
+                </section>
+                <section class="box-container-background-images">
+                    <section class="conatiner-image ">
+                    <img src="./Imageszip/Pillows.png" alt="">
+                    <p class="offer-text">Bedsheets</p>
+                    </section>
+                    <section class="conatiner-image ">
+                        <img src="./Imageszip/decor.png" alt="">
+                        <p class="offer-text">home decoration</p>
+                        </section>
+                        <section class="conatiner-image ">
+                            <img src="./Imageszip/hstorage.png" alt="">
+                            <p class="offer-text">Home Storage</p>
+                            </section>
+                            <section class="conatiner-image ">
+                                <img src="./Imageszip/Light.png" alt="">
+                                <p class="offer-text">Lightning Solutions</p>
+                                </section>
+   
+                </section>
+                <section>
+                    <p class="text-primary">See all offers</p>
+                </section>
+            </section>
+            <!--BOX 7-->
+            <section class="box-container-boxes p-4">
+                <section >
+                    <p class="text-dark fw-bold fs-4">Appliences For your home </p>
+                </section>
+                <section class="box-container-background-images">
+                    <section class="conatiner-image ">
+                    <img src="./Imageszip/AC.png" alt="">
+                    <p class="offer-text">Airconditioners</p>
+                    </section>
+                    <section class="conatiner-image ">
+                        <img src="./Imageszip/Fridge.png" alt="">
+                        <p class="offer-text">Refrigerator</p>
+                        </section>
+                        <section class="conatiner-image ">
+                            <img src="./Imageszip/microwave.png" alt="">
+                            <p class="offer-text">Microwaves</p>
+                            </section>
+                            <section class="conatiner-image ">
+                                <img src="./Imageszip/Washing machine.png" alt="">
+                                <p class="offer-text">Washing machine</p>
+                                </section>
+   
+                </section>
+                <footer>
+                <section>
+                    <p class="text-primary">See all offers</p>
+                </section>
+                </footer>
+            </section>
+            <!--BOX 8-->
+            <section class="box-container-boxes p-4">
+                <section >
+                    <p class="text-dark fw-bold fs-4">Home Improvements</p>
+                </section>
+                <section class="box-container-background-images">
+                    <section class="conatiner-image ">
+                    <img src="./Imageszip/MOPS.png" alt="">
+                    <p class="offer-text">Wipe Mops</p>
+                    </section>
+                    <section class="conatiner-image ">
+                        <img src="./Imageszip/bathapp.png" alt="">
+                        <p class="offer-text">Bathroom Hardwares</p>
+                        </section>
+                        <section class="conatiner-image ">
+                            <img src="./Imageszip/Hammer.png" alt="">
+                            <p class="offer-text">Hammers And Screw drivers</p>
+                            </section>
+                            <section class="conatiner-image ">
+                                <img src="./Imageszip/switches.webp" alt="">
+                                <p class="offer-text">Extension board</p>
+                                </section>
+   
+                </section>
+                <footer>
+                <section>
+                    <p class="text-primary">See all offers</p>
+                </section>
+                </footer>
+            </section>
+         </section>
+        </section>
+    </section>
+</section>
+<!--SECTION3 BOOTOM-->
+<section>
+    <section><hr class="text-secondary"></section>
+<section class="d-flex justify-content-center align-items-center flex-column">
+    
+    <p class="text-secondary">See personalized recommendations</p>
+    <button class="bottom-signin" data-bs-toggle="modal" data-bs-target="#create-account" >Sign in</button>
+    <p class="text-secondary mt-3">New customer?<a href="" class="ms-1 text-decoration-none">Start here</a></p>
+    
+</section>
+<section><hr class="text-secondary"></section>
+</section>
+<!--SECTION3 BOTTOM END-->
+<section class="d-flex justify-content-center align-items-center flex-column" style="color: white;background-color:rgb(25, 25, 156);cursor: pointer;">
+    <p>Back to top</p>
+</section>
+<!--FOOTER PAGE-->
+
+<section class="">
+    <!--CONTACT PAGE START-->
+    <section class="d-flex  contact-box">
+    <div>
+        <p>Get yo know Us</p>
+        <p>About us</p>
+        <p>carees</p>
+        <p>Press releases</p>
+        <p>Amazon Science</p>
+    </div>
+    <div class="follow">
+        <p>Follow us on</p>
+       
+        <i class="fa-brands fa-facebook pb-2"></i>
+        <i class="fa-brands fa-instagram  pb-2"></i>
+        <i class="fa-brands fa-twitter pb-2"></i>
+        <i class="fa-brands fa-discord pb-2"></i>
+        <i class="fa-brands fa-youtube pb-2"></i>
+        <i class="fa-brands fa-telegram pb-2"></i>
+    </div>
+    <div>
+        <p>Let us help you</p>
+        <p>Your Account</p>
+        <p>Amazon app download</p>
+        <p>help</p>
+    </div>
+    </section>
+    <!--CONTACT PAGE END-->
+
+    <!--BASE FOOTER PAGE START-->
+    <section>
+        <section class="d-flex justify-content-center align-items-center bottom-footer-main  " style="background-color: rgb(3, 3, 33);">
+            <section>
+                <img src="./images/logo.png" alt="" class="logo-img">
+            </section>
+            <section >
+                <div class="bottom-footer-language d-flex justify-content-center align-items-centre">
+                <div>
+                    <span class="fa-solid fa-globe"></span>
+                    </div>
+                    <div>
+                <select name="" id="" class="border-0 ms-2" >
+                    <option value="English">English</option>
+                    <option value="">Tamil</option>
+                    <option value="">Hindi</option>
+                </select>
+                </div>
+                </div>
+            </section>
+        </section>
+        <section class="d-flex text-light justify-content-between ps-5 pe-5" style="background-color: rgb(3, 3, 33);">
+            
+               <p> English</p>
+                <p>Australia</p>
+                <p>Brazil</p>
+                <p>Canada</p>
+                <p>China</p>
+                <p>France</p>
+                <p>Germany</p>
+                <p>Italy</p>
+                <p>Japan</p>
+                <p>Mexico</p>
+                <p>Netherlands</p>
+                <p>Poland</p>
+                <p>Singapore</p>
+                <p>Spain</p>
+                <p>Turkey</p>
+                <p>United Arab Emirates</p>
+                <p>United Kingdom</p>
+                <p>United States</p>
+        </section>
+    </section>
+</section>
+<!--FOOTER END-->
+
+    </body>
+</html>

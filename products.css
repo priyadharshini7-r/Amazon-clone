@@ -1,0 +1,104 @@
+body{
+    margin: 0;
+
+    
+}
+.product-boxes{
+    width: 32%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 30px;
+}
+.product-highlight{
+    background-color: rgb(228, 54, 54);
+    color: white;
+    padding: 3px 3px;
+    
+}
+.bestsellers-logo div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:white;
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px lightgray;
+    
+
+}
+.bestsellers-logo div:hover{
+   box-shadow: 0 0 8px rgb(222, 11, 11);
+
+}
+.bestsellers-logo div img{
+    height: 100px;
+    width: 130px;
+}
+.fa-cart-shopping:hover{
+    cursor: pointer;
+   
+}
+.cartbox-boxes{
+    box-shadow:0 0 5px lightgray ; 
+    width: 21%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 20px;
+}
+.cartbox-boxes:hover{
+    box-shadow: 0 0 10px lightgray;
+}
+.cart-input{
+   
+    width: 30px;
+    border: 1px solid lightgray;
+    outline: none;
+    border-radius: 3px;
+    align-items: center;
+    padding: 3px 10px;
+    
+   
+    
+}
+.add-quantity:hover{
+    cursor: pointer;
+    color:grey;
+}
+.remove-button:hover{
+    cursor: pointer;
+    
+
+}
+.addcart-main-box{
+    border-left: 1px solid lightgray;
+    display: none;
+
+   
+   
+}
+
+.addcart-main-box-active{
+    transition: 0.5s;
+    display: block;
+    
+   
+}
+.addcart-box {
+    box-shadow: 0 0 5px lightgray;
+}
+.cancel-cart{
+    position: absolute;
+    color: gray;
+    right: 0;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.addcart-box-remove{
+    visibility: hidden;
+    
+}

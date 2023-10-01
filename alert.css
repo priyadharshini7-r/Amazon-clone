@@ -1,0 +1,93 @@
+body::-webkit-scrollbar{
+	display: none;
+}
+#sec{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: lightgrey;
+	padding:5px 10px;
+	position: sticky;
+	top: 0;
+	left: 0;
+
+}
+#nav
+{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+#nav li{
+	list-style: none;
+	padding: 0 50px;
+}
+#nav a{
+	text-decoration: none;
+	font-size: 20px;
+	padding: 10px 15px;
+	cursor: pointer;
+	color: black;
+}
+#nav a:hover,
+#nav a.active
+{
+	color: white;
+	box-shadow:0 0 10px red;
+	background: red;
+	border-radius: 5px;
+	transition: 0.3s ease;
+}
+.body{
+	width: 100%;
+	height: 100vh;
+	border: 1px solid black;
+	background-image: url(C:/Users/PRAVEENKUMAR/Desktop/webpr1/rest.jpg);
+	background-size: cover;
+
+}
+.alertbox{
+	background-color: white;
+	border-radius: 10px;
+	width: 30%;
+	height: 60vh;
+	text-align: center;
+	margin-top: 100px;
+	margin-left: 500px;
+}
+.alertbox img{
+	margin-top: -50px;
+}
+.alertbox h2{
+	font-size: 30px;
+	font-style:bold;
+	margin-top: 60px;
+}
+.alertbox button{
+	padding: 10px 10px;
+	background-color:forestgreen;
+	color: white;
+	border-radius: 10px;
+	border: none;
+	width: 90px;
+	height: 50px;
+	margin-top: 50px;
+	font-family: monospace;
+
+}
+.alertbox h3{
+	margin-top: 50px;
+}
+.alertbox button:active{
+	transform: scale(1.1);
+
+}
+.closepop{
+	top: 0;
+	visibility: hidden;
+	
+}
+#audi{
+	visibility: hidden;
+	display: none;
+}
